@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔥 REVOLUTIONARY DESIGN SYSTEM - WORLD'S BEST INDUSTRIAL BRAND 🔥 */
+
+@layer base {
+  :root {
+    /* 🎨 Earth Tone Color Palette - Premium Natural Colors */
+    --primary: 25 100% 50%; /* Ochre/orange - warm earth primary */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 25 90% 60%;
+    --primary-dark: 25 100% 35%;
+    --primary-ultra: 25 95% 45%;
+    
+    --secondary: 15 85% 45%; /* Rust/volcanic - earth heritage */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 15 90% 55%;
+    --secondary-light: 15 70% 65%;
+    --secondary-ultra: 15 80% 40%;
+    
+    --tertiary: 25 40% 8%; /* Deep earth brown - sophisticated base */
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-light: 25 30% 18%;
+    --tertiary-medium: 25 35% 12%;
+    
+    /* Indigenous Earth Palette - Cultural & Sophisticated */
+    --ochre: 25 95% 50%; /* Traditional ochre - cultural significance */
+    --ochre-light: 25 80% 70%;
+    --ochre-dark: 25 100% 35%;
+    
+    --sand: 45 50% 85%; /* Desert sand - warm neutral */
+    --sand-dark: 45 35% 70%;
+    --sand-light: 45 60% 92%;
+    
+    --earth: 35 40% 20%; /* Rich red earth */
+    --earth-light: 35 30% 35%;
+    --earth-dark: 35 50% 12%;
+    
+    /* Premium System Colors */
+    --background: 0 0% 100%;
+    --foreground: 25 100% 50%; /* Same as primary color */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 25 40% 8%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 40% 8%;
+    
+    --muted: 45 30% 95%;
+    --muted-foreground: 25 20% 40%;
+    
+    --accent: 35 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 25 85% 45%;
+    
+    --radius: 16px;
+    
+    /* 🚀 REVOLUTIONARY GRADIENTS - CINEMATIC PERFECTION */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-ultra)) 50%, hsl(var(--primary-glow)) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary-ultra)) 0%, hsl(var(--secondary)) 50%, hsl(var(--secondary-glow)) 100%);
+    --gradient-earth: linear-gradient(135deg, hsl(var(--ochre)) 0%, hsl(var(--primary)) 25%, hsl(var(--primary-ultra)) 75%, hsl(var(--secondary)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--tertiary)) 0%, hsl(var(--tertiary-medium)) 25%, hsl(var(--earth-dark)) 75%, hsl(var(--secondary-ultra)) 100%);
+    --gradient-hero-mega: radial-gradient(ellipse at top, hsl(var(--tertiary)) 0%, hsl(var(--tertiary-light)) 50%, hsl(var(--earth)) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--sand-light)) 50%, hsl(var(--sand)) 100%);
+    --gradient-industrial: linear-gradient(135deg, hsl(var(--tertiary)) 0%, hsl(var(--tertiary-light)) 30%, hsl(var(--secondary-ultra)) 70%, hsl(var(--secondary)) 100%);
+    --gradient-fire: linear-gradient(45deg, hsl(var(--primary)) 0%, hsl(var(--primary-ultra)) 25%, hsl(var(--secondary)) 50%, hsl(var(--primary-glow)) 75%, hsl(var(--primary)) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(var(--primary), 0.1) 0%, hsla(var(--secondary), 0.05) 100%);
+    
+    /* ✨ CINEMATIC SHADOWS - MOVIE-GRADE DEPTH */
+    --shadow-xs: 0 1px 3px 0 hsl(var(--tertiary) / 0.12);
+    --shadow-sm: 0 2px 8px 0 hsl(var(--tertiary) / 0.15), 0 1px 3px -1px hsl(var(--tertiary) / 0.12);
+    --shadow-md: 0 8px 20px -2px hsl(var(--tertiary) / 0.18), 0 4px 8px -4px hsl(var(--tertiary) / 0.15);
+    --shadow-lg: 0 20px 40px -8px hsl(var(--tertiary) / 0.2), 0 8px 16px -8px hsl(var(--tertiary) / 0.18);
+    --shadow-xl: 0 40px 80px -15px hsl(var(--tertiary) / 0.25), 0 16px 32px -16px hsl(var(--tertiary) / 0.22);
+    --shadow-2xl: 0 60px 120px -20px hsl(var(--tertiary) / 0.3), 0 24px 48px -24px hsl(var(--tertiary) / 0.25);
+    --shadow-inner: inset 0 4px 8px 0 hsl(var(--tertiary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.4), 0 0 80px hsl(var(--primary) / 0.2);
+    --shadow-glow-lg: 0 0 80px hsl(var(--primary) / 0.5), 0 0 160px hsl(var(--primary) / 0.3);
+    --shadow-mega: 0 80px 160px -30px hsl(var(--tertiary) / 0.4), 0 32px 64px -32px hsl(var(--tertiary) / 0.3);
+    --shadow-fire: 0 0 60px hsl(var(--primary) / 0.6), 0 0 120px hsl(var(--secondary) / 0.4);
+    
+    /* Animation System - Buttery Smooth */
+    --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Sidebar System */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 25 40% 8%;
+    --sidebar-primary: 25 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 30% 95%;
+    --sidebar-accent-foreground: 25 40% 8%;
+    --sidebar-border: 45 20% 88%;
+    --sidebar-ring: 25 85% 45%;
+  }
+
+  .dark {
+    --background: 25 40% 4%;
+    --foreground: 45 60% 98%;
+
+    --card: 25 40% 6%;
+    --card-foreground: 45 60% 98%;
+
+    --popover: 25 40% 6%;
+    --popover-foreground: 45 60% 98%;
+
+    --primary: 35 100% 60%;
+    --primary-foreground: 25 40% 4%;
+    --primary-glow: 35 100% 70%;
+
+    --secondary: 18 75% 50%;
+    --secondary-foreground: 25 40% 4%;
+    --secondary-glow: 18 85% 60%;
+
+    --tertiary: 220 30% 85%;
+    --tertiary-foreground: 25 40% 4%;
+
+    --muted: 25 20% 15%;
+    --muted-foreground: 45 30% 65%;
+
+    --accent: 35 100% 60%;
+    --accent-foreground: 25 40% 4%;
+
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 25 40% 4%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 35 100% 60%;
+    
+    --sidebar-background: 25 40% 6%;
+    --sidebar-foreground: 45 60% 95%;
+    --sidebar-primary: 35 100% 60%;
+    --sidebar-primary-foreground: 25 40% 4%;
+    --sidebar-accent: 25 20% 15%;
+    --sidebar-accent-foreground: 45 60% 95%;
+    --sidebar-border: 25 20% 20%;
+    --sidebar-ring: 35 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    cursor: default !important;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  /* Premium scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+    background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-glow;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* 🚀 REVOLUTIONARY BUTTON SYSTEM - NEXT-GEN INTERACTIONS */
+  .btn-hero-primary {
+    @apply relative overflow-hidden bg-gradient-fire text-primary-foreground px-10 py-5 rounded-3xl font-bold text-lg shadow-mega transition-all duration-500 hover:scale-[1.05] hover:shadow-fire active:scale-[0.95] border border-primary/20;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+  
+  .btn-hero-primary::before {
+    @apply absolute inset-0 bg-gradient-to-r from-primary-glow via-secondary-glow to-primary-ultra opacity-0 transition-all duration-500;
+    content: '';
+    background-size: 200% 200%;
+    animation: gradient-shift 2s ease infinite reverse;
+  }
+  
+  .btn-hero-primary:hover::before {
+    @apply opacity-80;
+  }
+  
+  .btn-hero-primary::after {
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-all duration-700 skew-x-12;
+    content: '';
+    transform: translateX(-100%) skewX(12deg);
+  }
+  
+  .btn-hero-primary:hover::after {
+    @apply opacity-100;
+    transform: translateX(200%) skewX(12deg);
+  }
+  
+  .btn-hero-secondary {
+    @apply relative overflow-hidden bg-gradient-industrial text-secondary-foreground px-10 py-5 rounded-3xl font-bold text-lg shadow-xl transition-all duration-500 hover:scale-[1.05] hover:shadow-glow-lg active:scale-[0.95] border border-secondary/30;
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  /* 🔥 NEW ORANGE DOWNLOAD/CTA BUTTON - MATCHES YOUR DESIGN */
+  .btn-orange-download {
+    @apply relative overflow-hidden px-8 py-4 rounded-2xl font-bold text-base text-white shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] border border-orange-500/20;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff6b35 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+  
+  .btn-orange-download::before {
+    @apply absolute inset-0 opacity-0 transition-all duration-300;
+    content: '';
+    background: linear-gradient(135deg, #ff8c5a 0%, #ffa726 50%, #ff8c5a 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 2s ease infinite reverse;
+  }
+  
+  .btn-orange-download:hover::before {
+    @apply opacity-0;
+  }
+  
+  .btn-orange-download::after {
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 transition-all duration-500 skew-x-12;
+    content: '';
+    transform: translateX(-100%) skewX(12deg);
+  }
+  
+  .btn-orange-download:hover::after {
+    @apply opacity-100;
+    transform: translateX(200%) skewX(12deg);
+  }
+  
+  .btn-outline-premium {
+    @apply relative border-2 border-white text-white px-6 py-3 rounded-xl font-semibold bg-transparent transition-all duration-300 hover:bg-white hover:text-tertiary hover:scale-[1.02] hover:shadow-lg active:scale-[0.98];
+  }
+  
+  .btn-outline-earth {
+    @apply relative border-2 border-primary text-primary px-6 py-3 rounded-xl font-semibold bg-transparent transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-[1.02] hover:shadow-lg active:scale-[0.98];
+  }
+  
+  .btn-ghost-premium {
+    @apply text-foreground px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-muted hover:text-primary hover:scale-[1.02] active:scale-[0.98];
+  }
+  
+  /* 🎯 CINEMATIC TYPOGRAPHY - HOLLYWOOD-GRADE TEXT */
+  .heading-hero {
+    @apply font-playfair text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black text-foreground leading-[0.85] tracking-[-0.02em];
+    text-shadow: 0 4px 20px hsl(var(--tertiary) / 0.3);
+    background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--primary)) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .heading-section {
+    @apply font-playfair text-3xl sm:text-5xl lg:text-7xl xl:text-8xl font-black text-foreground leading-[0.9] tracking-[-0.01em];
+    text-shadow: 0 2px 15px hsl(var(--tertiary) / 0.2);
+  }
+  
+  .heading-subsection {
+    @apply font-playfair text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground leading-tight;
+  }
+  
+  .text-large {
+    @apply text-xl sm:text-2xl lg:text-3xl leading-relaxed text-muted-foreground font-light;
+  }
+  
+  .text-body {
+    @apply text-base sm:text-lg leading-relaxed text-muted-foreground;
+  }
+  
+  .text-small {
+    @apply text-sm leading-relaxed text-muted-foreground;
+  }
+  
+  /* Premium Card System */
+  .card-premium {
+    @apply bg-card border border-border rounded-3xl p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .card-glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl;
+  }
+  
+  .card-highlight {
+    @apply bg-gradient-subtle border border-border rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+  
+  /* 🎬 ADVANCED ANIMATION SYSTEM - FIXED */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .fade-in-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-48px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .fade-in-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(48px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .fade-in-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .scale-in.in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .stagger-children > * {
+    transition-delay: calc(var(--stagger-delay, 0ms));
+  }
+  
+  /* 🌊 PARALLAX EFFECTS - FIXED */
+  .parallax-slow {
+    transform: translateY(calc(var(--scroll-y, 0px) * 0.3));
+  }
+  
+  .parallax-medium {
+    transform: translateY(calc(var(--scroll-y, 0px) * 0.5));
+  }
+  
+  .parallax-fast {
+    transform: translateY(calc(var(--scroll-y, 0px) * 0.8));
+  }
+  
+  /* 🎨 PREMIUM BACKGROUND PATTERNS - FIXED */
+  .pattern-dots {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.08) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+  
+  .pattern-dots-subtle {
+    background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.05) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+  
+  .pattern-grid-subtle {
+    background-image: 
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  
+  .pattern-indigenous {
+    background-image: radial-gradient(circle at 2px 2px, hsl(var(--ochre) / 0.1) 2px, transparent 0);
+    background-size: 48px 48px;
+  }
+  
+  /* ✨ GLASS MORPHISM EFFECTS - FIXED */
+  .glass-light {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* 🎨 REVOLUTIONARY GRADIENT TEXT EFFECTS */
+  .text-gradient-primary {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+  
+  .text-gradient-earth {
+    @apply bg-gradient-earth bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-fire {
+    @apply bg-gradient-fire bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 2s ease infinite;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-secondary bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 3.5s ease infinite;
+  }
+  
+  /* 🎯 HOVER INTERACTIONS - FIXED */
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 💫 LOADING STATES - FIXED */
+  .skeleton {
+    background: hsl(var(--muted));
+    border-radius: var(--radius);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .shimmer {
+    background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--muted-foreground) / 0.1) 50%, hsl(var(--muted)) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes pulse-epic {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+  }
+
+  @keyframes float-epic {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-20px) rotate(1deg); }
+    66% { transform: translateY(-10px) rotate(-1deg); }
+  }
+  
+  /* 📐 PREMIUM SPACING SYSTEM - FIXED */
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  .container-custom {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Advanced Grid Layouts */
+  .grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
