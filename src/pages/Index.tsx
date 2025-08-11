@@ -114,9 +114,11 @@ const Index = () => {
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Link to="/about" className="btn-outline-premium">
-                  <span>Our Story</span>
-                </Link>
+                <Button asChild variant="outline-earth">
+                  <Link to="/about">
+                    <span>Our Story</span>
+                  </Link>
+                </Button>
                 <button className="btn-ghost-premium group text-white hover:text-tertiary">
                   <Play className="mr-2 h-5 w-5" />
                   <span>Watch Video</span>
@@ -547,9 +549,11 @@ const Index = () => {
               <Link to="/contact" className="btn-hero-secondary">
                 Get Quote Today
               </Link>
-              <Link to="/services" className="btn-outline-premium border-white text-white hover:bg-white hover:text-foreground">
-                Learn More
-              </Link>
+              <Button asChild variant="outline-earth">
+                <Link to="/services">
+                  Learn More
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

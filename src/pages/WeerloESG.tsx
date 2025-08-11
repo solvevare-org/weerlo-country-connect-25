@@ -414,7 +414,7 @@ const WeerloESG = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="btn-outline-premium">
+                <Button asChild variant="outline-earth">
                   <Link to="/about">
                     <span>Our Story</span>
                   </Link>

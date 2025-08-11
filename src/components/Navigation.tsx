@@ -25,11 +25,10 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled 
-        ? 'bg-tertiary/95 backdrop-blur-lg shadow-xl border-b border-border/20' 
-        : 'bg-tertiary/90 backdrop-blur-sm'
-    }`}>
+    <nav className={
+      // Opaque navbar to match Home look across all pages
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-tertiary shadow-xl border-b border-border/20'
+    }>
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Premium Logo */}

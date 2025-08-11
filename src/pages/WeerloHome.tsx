@@ -137,13 +137,13 @@ const WeerloHome = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild className="btn-outline-premium">
+                <Button asChild variant="outline-earth">
                   <Link to="/esg-impact">
                     <Shield className="mr-2 h-5 w-5" />
                     <span>ESG Impact</span>
                   </Link>
                 </Button>
-                <Button asChild className="btn-outline-premium">
+                <Button asChild variant="outline-earth">
                   <Link to="/contact">
                     <PhoneCall className="mr-2 h-5 w-5" />
                     <span>Get Quote</span>

@@ -181,7 +181,7 @@ const WeerloTechnology = () => {
                     </div>
                     <span className="text-white font-medium text-lg">RFID System Demo</span>
                     <p className="text-white/70 text-sm mt-2">Interactive Technology Preview</p>
-                    <Button className="mt-4 btn-outline-premium">
+                    <Button className="mt-4" variant="outline-earth">
                       <Play className="mr-2 h-4 w-4" />
                       Watch Demo
                     </Button>
@@ -338,7 +338,7 @@ const WeerloTechnology = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
-                <Button asChild variant="outline" className="btn-outline-premium">
+                <Button asChild variant="outline-earth">
                   <Link to="/contact">
                     <span>Request Consultation</span>
                   </Link>
