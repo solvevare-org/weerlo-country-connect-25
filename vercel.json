@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/lovable-uploads/836f6d1a-293f-4366-87ef-488903b4c780.png",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
